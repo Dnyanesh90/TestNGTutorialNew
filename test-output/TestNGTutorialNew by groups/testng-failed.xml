@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNGTutorialNew by groups]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GRP-HomePage,AdminPage,LoginPage(failed)">
+    <groups>
+      <run>
+        <include name="HomePage"/>
+        <include name="AdminPage"/>
+        <include name="LoginPage"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestLayer.AdminPage">
+        <methods>
+          <include name="addNewUserInAdminPage"/>
+        </methods>
+      </class> <!-- TestLayer.AdminPage -->
+      <class name="TestLayer.LoginPage">
+        <methods>
+          <include name="loginFunctionality"/>
+        </methods>
+      </class> <!-- TestLayer.LoginPage -->
+      <class name="TestLayer.HomePage">
+        <methods>
+          <include name="validateHomePageLogo"/>
+          <include name="validateHomePageTitle"/>
+          <include name="validateHomePageUrl"/>
+        </methods>
+      </class> <!-- TestLayer.HomePage -->
+    </classes>
+  </test> <!-- GRP-HomePage,AdminPage,LoginPage(failed) -->
+</suite> <!-- Failed suite [TestNGTutorialNew by groups] -->
